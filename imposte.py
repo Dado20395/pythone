@@ -1,0 +1,19 @@
+ALIQUOTAUNO = 0.23
+ALIQUOTADUE = 0.35
+ALIQUOTATRE = 0.43
+
+
+REDDITO = int(input("Qual'è il tuo reddito?"))
+
+if REDDITO <= 28000  :
+    IMPOSTA = REDDITO * ALIQUOTAUNO 
+
+if REDDITO<=50000  :
+    IMPOSTA = 28000 * ALIQUOTAUNO + (REDDITO - 28000) * ALIQUOTADUE
+
+if   REDDITO > 50000 :
+    IMPOSTA = 28000 * ALIQUOTAUNO + (50000 - 28000) * ALIQUOTADUE + (REDDITO - 50000) * ALIQUOTATRE
+
+
+print(IMPOSTA)
+print("il calcolo sul tuo reddito di" , REDDITO ,"è di" , IMPOSTA , "euro")
