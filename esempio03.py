@@ -21,10 +21,10 @@ while partita :
         if punteggio_PlayerA == 40 :
             vantaggioA += 1
             if punteggio_PlayerB == 40 and punteggio_PlayerA == 40 :
-              print("Deuce!")
-              if vantaggioA == vantaggioB + 1 :
+              print("Deuce: " , vantaggioA - 1 , " - " , vantaggioB - 1 )
+              if vantaggioA - 1 == vantaggioB :
                print("PlayerA é in vantaggio!")
-              if vantaggioA == vantaggioB + 2 :
+              if vantaggioA - 2 == vantaggioB  :
                print("PlayerA ha vinto ai vantaggi il game!")
                break
         if punteggio_PlayerB <= 30 and punteggio_PlayerA + vantaggioA == 42 :
@@ -40,10 +40,10 @@ while partita :
         if punteggio_PlayerB == 40 :
             vantaggioB += 1
             if punteggio_PlayerA == 40 and punteggio_PlayerB == 40 :
-              print("Deuce!")
-              if vantaggioB == vantaggioA + 1 :
+              print("Deuce:" , vantaggioA - 1 , " - " , vantaggioB - 1 )
+              if vantaggioB - 1 == vantaggioA  :
                print("PlayerB é in vantaggio!")
-              if vantaggioB == vantaggioA + 2 : 
+              if vantaggioB - 2 == vantaggioA  : 
                print("PlayerB ha vinto ai vantaggi il game!")
                break
         if punteggio_PlayerA <= 30 and punteggio_PlayerB + vantaggioB == 42 :
