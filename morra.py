@@ -3,15 +3,15 @@ PlayerB = 0
 pareggio = 0
 partita = True
 
-
 while partita :
     punto = input("Giochiamo a Morra! Inserisci C per Carta, F per Forbice o S per Sasso, separati da uno spazio! ")
-    punto.upper()
+    punto = punto.upper()
+    
     if punto == "C C" or punto == "F F" or punto == "S S" :
         pareggio += 1
-    if punto == "C S" or punto == "F C" or punto == "S F"  :
+    elif punto == "C S" or punto == "F C" or punto == "S F" :
         PlayerA += 1
-    if punto == "S C" or punto == "C F" or punto == "F S" :
+    elif punto == "S C" or punto == "C F" or punto == "F S" :
         PlayerB += 1
     else :
        print("Hai sbagliato ad inserire il risultato!")
