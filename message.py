@@ -3,7 +3,7 @@ class Message :
     def __init__(self, mittente, destinatario):
         self.mittente = mittente
         self.destinatario = destinatario
-        self.testo = " "
+        self.testo = ""
     def append(self, riga):
         self.testo += riga + "\n"
     def toString(self):
